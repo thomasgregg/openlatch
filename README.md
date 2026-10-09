@@ -13,6 +13,37 @@
 
 ---
 
+## A closer look
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/images/connect.png" width="180" alt="Enter your VIN to connect your car"></td>
+    <td align="center"><img src="docs/images/pairing.png" width="180" alt="Authorize OpenLatch with your existing key card"></td>
+    <td align="center"><img src="docs/images/shortcuts.png" width="180" alt="Set up Siri, Shortcuts and the Action Button"></td>
+    <td align="center"><img src="docs/images/everyday.png" width="180" alt="Current daily control screen with default door and Other doors"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>1 · Connect your car</sub></td>
+    <td align="center"><sub>2 · Pair your key</sub></td>
+    <td align="center"><sub>3 · Optional shortcuts</sub></td>
+    <td align="center"><sub>4 · Daily use</sub></td>
+  </tr>
+</table>
+
+<sub>App screenshots captured in simulator preview mode with sample cars.</sub>
+
+## Contents
+
+- [A closer look](#a-closer-look)
+- [Why OpenLatch?](#why-openlatch)
+- [Get started](#get-started)
+- [Features](#features)
+- [Siri, Shortcuts and the Action Button](#siri-shortcuts-and-the-action-button)
+- [Privacy and connection](#privacy-and-connection)
+- [For developers](#for-developers)
+- [Documentation](#documentation)
+- [Credits and license](#credits-and-license)
+
 ## Why OpenLatch?
 
 Unlocking your Tesla leaves the door latched: you still need to operate the exterior handle. Sometimes you want to release the latch directly—when a handle is awkward to use, when helping a passenger get in, or when you want a familiar voice command or button to do the job.
@@ -71,25 +102,6 @@ Pair directly with the vehicle using an existing key card, then use the app, Sir
 - **English and German.** Interface, help, permission prompts and Siri phrases are localized.
 - **Honest feedback.** A command acknowledgement is distinguished from confirmed door movement; ambiguous requests are never automatically retried.
 
-
-## A closer look
-
-<table>
-  <tr>
-    <td align="center"><img src="docs/images/connect.png" width="180" alt="Enter your VIN to connect your car"></td>
-    <td align="center"><img src="docs/images/pairing.png" width="180" alt="Authorize OpenLatch with your existing key card"></td>
-    <td align="center"><img src="docs/images/shortcuts.png" width="180" alt="Set up Siri, Shortcuts and the Action Button"></td>
-    <td align="center"><img src="docs/images/everyday.png" width="180" alt="Current daily control screen with default door and Other doors"></td>
-  </tr>
-  <tr>
-    <td align="center"><sub>1 · Connect your car</sub></td>
-    <td align="center"><sub>2 · Pair your key</sub></td>
-    <td align="center"><sub>3 · Optional shortcuts</sub></td>
-    <td align="center"><sub>4 · Daily use</sub></td>
-  </tr>
-</table>
-
-<sub>App screenshots captured in simulator preview mode with sample cars.</sub>
 
 ## Siri, Shortcuts and the Action Button
 
