@@ -1,0 +1,27 @@
+:root { color-scheme: light dark; --accent: #087ec0; --surface: #f5f7fa; --text: #17212a; --muted: #4e5d68; --line: #dce3e8; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--surface); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.65; }
+a { color: var(--accent); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; border-radius: 3px; }
+header, main, footer { max-width: 800px; margin: auto; padding: 28px; }
+header { display: flex; gap: 24px; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text); font-size: 20px; font-weight: 700; }
+.brand img { width: 48px; height: 48px; border-radius: 12px; }
+nav { display: flex; gap: 20px; flex-wrap: wrap; }
+nav a { font-size: 15px; }
+main { padding-top: 44px; padding-bottom: 56px; }
+h1 { font-size: clamp(30px, 6vw, 44px); line-height: 1.12; letter-spacing: -.04em; margin: 0 0 28px; }
+h2 { font-size: 24px; line-height: 1.25; margin: 36px 0 12px; letter-spacing: -.02em; }
+p { margin: 0 0 18px; }
+li { padding-left: 6px; margin-bottom: 12px; }
+footer { border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+.intro { font-size: 20px; color: var(--muted); }
+.links { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 34px 0; }
+.card { display: block; border: 1px solid var(--line); padding: 22px; border-radius: 18px; text-decoration: none; background: #fff; }
+.card strong { display: block; font-size: 20px; }
+.card span { color: var(--muted); font-size: 15px; }
+.lang { display: inline-block; margin-bottom: 24px; }
+section[lang=de] { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 16px; }
+@media (max-width: 520px) { header { gap: 16px; flex-wrap: wrap; } header, main, footer { padding-left: 22px; padding-right: 22px; } .links { grid-template-columns: 1fr; } }
+@media (prefers-color-scheme: dark) { :root { --surface: #111820; --text: #f5f7fa; --muted: #b7c4ce; --line: #33414f; --accent: #67c5ff; } .card { background: #1a242f; } }
