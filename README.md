@@ -13,6 +13,18 @@
 
 ---
 
+## Contents
+
+- [A closer look](#a-closer-look)
+- [Why OpenLatch?](#why-openlatch)
+- [Get started](#get-started)
+- [Features](#features)
+- [Siri, Shortcuts and the Action Button](#siri-shortcuts-and-the-action-button)
+- [Privacy and connection](#privacy-and-connection)
+- [For developers](#for-developers)
+- [Documentation](#documentation)
+- [Credits and license](#credits-and-license)
+
 ## A closer look
 
 <table>
@@ -31,18 +43,6 @@
 </table>
 
 <sub>App screenshots captured in simulator preview mode with sample cars.</sub>
-
-## Contents
-
-- [A closer look](#a-closer-look)
-- [Why OpenLatch?](#why-openlatch)
-- [Get started](#get-started)
-- [Features](#features)
-- [Siri, Shortcuts and the Action Button](#siri-shortcuts-and-the-action-button)
-- [Privacy and connection](#privacy-and-connection)
-- [For developers](#for-developers)
-- [Documentation](#documentation)
-- [Credits and license](#credits-and-license)
 
 ## Why OpenLatch?
 
