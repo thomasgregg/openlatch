@@ -2,11 +2,10 @@
   <img src="docs/images/icon.png" width="88" alt="OpenLatch app icon">
   <h1>OpenLatch</h1>
   <p><strong>Your Tesla door. One tap, one shortcut, or one Siri request away.</strong></p>
-  <p>A focused iPhone app for releasing a chosen door over local Bluetooth.<br>Built with SwiftUI. No Tesla login, command backend or analytics.</p>
+  <p>A focused iPhone app for releasing a chosen door over local Bluetooth.<br>Pair with your existing key card. No Tesla login or API setup.<br>No command server or analytics.</p>
   <p>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-1683FF?style=flat-square" alt="License: MIT"></a>
     <img src="https://img.shields.io/badge/iOS-17%2B-1683FF?style=flat-square&amp;logo=apple&amp;logoColor=white" alt="iOS 17 or newer">
-    <img src="https://img.shields.io/badge/Swift-6.2%2B-F05138?style=flat-square&amp;logo=swift&amp;logoColor=white" alt="Swift 6.2 or newer">
     <img src="https://img.shields.io/badge/Siri%20%26%20Shortcuts-App%20Intents-1683FF?style=flat-square" alt="Siri and Shortcuts via App Intents">
   </p>
   <p><a href="#get-started">Get started</a> · <a href="docs/README.md">Documentation</a> · <a href="CONTRIBUTING.md">Contribute</a> · <a href="https://github.com/thomasgregg/openlatch/issues">Report an issue</a></p>
@@ -22,10 +21,46 @@ Tesla’s app includes an **Unlatch Door** quick control for the **driver door**
 
 Choose the passenger door for someone getting in, keep the driver door as your everyday default, or assign a specific car and door to your iPhone’s Action Button. Commands travel directly over nearby Bluetooth, with no Tesla login or command server.
 
+## Get started
+
+### Install OpenLatch
+
+The first App Store release has been submitted and is awaiting Apple’s review. Once it is available, install OpenLatch on your iPhone. You do not need a Mac or Xcode to use the App Store app. Developers can [build from source](#for-developers) now.
+
+### Have these ready
+
+- An **iPhone running iOS 17 or later** with Bluetooth enabled.
+- A **compatible Tesla**, parked nearby. Available door functions depend on the car’s hardware and software.
+- An **existing authorized Tesla key card** to approve pairing.
+- Your car’s **17-character VIN**, which you can find in the Tesla app or on the car’s **Controls → Software** screen.
+
+**No Tesla account sign-in. No Tesla developer account, API keys or access tokens to obtain. No server to set up.** Door commands travel directly over nearby Bluetooth, without an internet connection.
+
+### Pair and open your first door
+
+1. **Open OpenLatch near your parked car.** Keep your iPhone unlocked and allow Bluetooth access when prompted.
+2. **Enter or paste the VIN.** Keep your key card ready for the next step.
+3. **Authorize OpenLatch in the car.** Follow the app and vehicle prompts, place your existing key card on the vehicle’s key-card reader, and approve the new key on the car’s screen.
+4. **Complete the guided door test.** Check the door physically and tap **It worked** only after it releases successfully.
+5. **Choose your everyday door.** In **Settings → Cars**, select your car and choose its **Default door**. The main button now uses that door.
+
+Siri, Shortcuts and the Action Button are optional. You can start with the app’s main button and [set up shortcuts](#siri-shortcuts-and-the-action-button) later.
+
+### Everyday use
+
+Stand near your car with your iPhone unlocked, open OpenLatch and tap the main button to release your default door. Tap **Other doors** to choose another door for that request. Releasing the latch does not guarantee that the door swings open automatically.
+
+To add another car, go to **Settings → Cars** and pair it with its own key card. Use the car selector on the main screen to switch between saved cars.
+
+If the car is not found, check the VIN, Bluetooth permission and proximity. If pairing stalls, check the vehicle’s authorization prompt and try the existing key card again. If a request is accepted but door movement is not confirmed, check the door before sending another request.
+
+See the [setup guide](docs/getting-started.md) for more help, switching phones and removing access.
+
 ## Features
 
 Pair directly with the vehicle using an existing key card, then use the app, Siri, Shortcuts or a supported iPhone’s Action Button.
 
+- **Simple key-card setup.** Guided pairing with your existing key card; no Tesla login or API access setup.
 - **One tap, your preferred door.** Save a default per car, or choose another door for a single request.
 - **Siri voice control.** Ask Siri to open your default door or a specific door with OpenLatch.
 - **Apple Shortcuts.** Choose the car and door, then add OpenLatch actions to your own shortcuts.
@@ -49,33 +84,16 @@ Pair directly with the vehicle using an existing key card, then use the app, Sir
   <tr>
     <td align="center"><sub>1 · Connect your car</sub></td>
     <td align="center"><sub>2 · Pair your key</sub></td>
-    <td align="center"><sub>3 · Set up shortcuts</sub></td>
+    <td align="center"><sub>3 · Optional shortcuts</sub></td>
     <td align="center"><sub>4 · Daily use</sub></td>
   </tr>
 </table>
 
 <sub>App screenshots captured in simulator preview mode with sample cars.</sub>
 
-## Get started
-
-You’ll need a Mac with Xcode and Swift 6.2+, an iPhone running iOS 17+, a compatible nearby Tesla and its existing key card for pairing. The simulator supports UI previews; real Bluetooth requires a physical iPhone.
-
-```sh
-git clone https://github.com/thomasgregg/openlatch.git
-cd openlatch
-open OpenLatch.xcodeproj
-```
-
-1. Choose the **OpenLatch Preview** scheme to explore the app without a car.
-2. To use Bluetooth, choose **OpenLatch**, select your signing team and bundle identifier, and run on an unlocked iPhone.
-3. Enter the vehicle’s 17-character VIN and follow the car’s key-card authorization instructions.
-4. Complete the guided door test, choose your default door, and set up Siri or Shortcuts.
-
-See [Getting started](docs/getting-started.md) for car settings, other doors, shortcuts and troubleshooting. Build from source using the steps above; [TestFlight preparation](docs/testflight.md) explains how to prepare a TestFlight build.
-
 ## Siri, Shortcuts and the Action Button
 
-OpenLatch provides five actions through Apple’s App Intents:
+Choose one of these actions in Apple Shortcuts:
 
 | Action | Door selection |
 | --- | --- |
@@ -93,19 +111,27 @@ OpenLatch provides five actions through Apple’s App Intents:
 
 Actions open OpenLatch and use device authentication. Commands connect to the nearby car over Bluetooth. See the [setup guide](docs/getting-started.md) for details.
 
-## How it works
+## Privacy and connection
 
-```text
-iPhone / SwiftUI  →  local Bluetooth  →  signed VCSEC session  →  chosen door
-```
+OpenLatch pairs as a vehicle key and sends commands directly from your iPhone to your nearby car. Keys and VINs stay in device-only Keychain storage. Each car has its own key.
 
-OpenLatch uses CoreBluetooth and a vendored TeslaBLE client to establish signed vehicle-security sessions. A door action sends one selected `closureMoveRequest` field set to `OPEN`, then checks the selected door’s status. Door release is a different operation from unlocking the vehicle.
+To remove access, remove the car in OpenLatch, then delete the matching key under **Controls → Locks** on the vehicle. Deleting the app alone does not revoke the vehicle’s authorization.
 
-Keys and VINs stay in device-only Keychain storage while unlocked. Each car has its own key. Manage saved cars in the app and vehicle authorizations under **Controls → Locks** on the car.
-
-Read [Bluetooth and security](docs/bluetooth.md) for the protocol, request lifecycle and key handling.
+Read [Bluetooth and security](docs/bluetooth.md) for technical details.
 
 ## For developers
+
+Building from source requires a Mac with Xcode and Swift 6.2 or newer. Real Bluetooth requires a physical iPhone; the simulator can preview the interface.
+
+```sh
+git clone https://github.com/thomasgregg/openlatch.git
+cd openlatch
+open OpenLatch.xcodeproj
+```
+
+Choose **OpenLatch Preview** to explore without a car. To use your car, choose **OpenLatch**, select your signing team and bundle identifier, and run on your iPhone. Then follow the [pairing steps above](#pair-and-open-your-first-door).
+
+The app uses SwiftUI, CoreBluetooth and a vendored TeslaBLE client for signed vehicle-security sessions. A door action sends the selected `closureMoveRequest` field set to `OPEN`, then checks that door’s status.
 
 Dependencies are vendored. The Xcode project is generated from `project.yml`; core logic can be tested independently:
 

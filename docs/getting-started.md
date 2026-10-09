@@ -2,20 +2,21 @@
 
 [← Documentation](README.md)
 
-## Open and run
+## Before you start
 
-1. Open `OpenLatch.xcodeproj` in Xcode with Swift 6.2 or newer. The app targets iOS 17+.
-2. Select the OpenLatch scheme and an iPhone simulator. Run to see the real welcome
-   screen. To explore all flows without a car, select the **OpenLatch Preview**
-   scheme (or add `-demo` in Scheme → Run → Arguments).
-3. For a physical iPhone, select your signing team and an available bundle identifier
-   in the app target. Build and run on your unlocked phone.
-4. Enter or paste the 17-character VIN; keep your existing key card ready. The app
-   requests a new driver key, then waits for authorization in the car. Follow the
-   car's instructions, place the existing key card on the car's centre-console
-   reader, and approve the new key on the car's screen.
-5. Test the driver door while parked. Confirm **It worked** only after checking
-   the door. Optionally configure Siri/Shortcuts, then use the one-button home screen.
+You need an iPhone running iOS 17 or later, a compatible nearby Tesla, the car’s 17-character VIN, and an existing authorized Tesla key card. Park the car and enable Bluetooth on your iPhone. No Tesla login, developer account, API keys, access tokens or server configuration are needed.
+
+The first App Store release is awaiting Apple’s review. Once available, install the app on your iPhone. For a source build or simulator preview, follow the [development guide](development.md) and the repository’s [build instructions](../README.md#for-developers).
+
+## Pair your car
+
+1. Open OpenLatch near your parked car with your iPhone unlocked. Allow Bluetooth access when prompted.
+2. Enter or paste the 17-character VIN. Find it in the Tesla app or on the car’s **Controls → Software** screen.
+3. Keep your existing key card ready. Follow the vehicle’s authorization prompts, place the card on the vehicle’s key-card reader and approve the new key on the car’s screen.
+4. Complete the guided driver-door test. Check the door physically and confirm **It worked** only after it releases successfully.
+5. Choose your preferred **Default door** under **Settings → Cars**. Siri and Shortcuts setup is optional; you can use the main app button straight away.
+
+Use OpenLatch near your car with your iPhone unlocked. The main button releases your default door; **Other doors** lets you select another door for a single request. Door availability depends on vehicle hardware and software. Releasing a latch does not guarantee the door swings open automatically.
 
 The onboarded key has Tesla's **driver** role. Its vehicle authorization is broader
 than the door actions exposed by OpenLatch.
