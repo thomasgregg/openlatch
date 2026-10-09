@@ -41,16 +41,16 @@ Pair directly with the vehicle using an existing key card, then use the app, Sir
 
 <table>
   <tr>
-    <td align="center"><img src="docs/images/everyday.png" width="180" alt="Light appearance with a vehicle illustration and the Open driver door button"></td>
-    <td align="center"><img src="docs/images/dark-mode.png" width="180" alt="Everyday door control in dark appearance"></td>
-    <td align="center"><img src="docs/images/cars.png" width="180" alt="Saved cars in OpenLatch settings"></td>
-    <td align="center"><img src="docs/images/pairing.png" width="180" alt="Pairing instructions for the vehicle key-card reader"></td>
+    <td align="center"><img src="docs/images/connect.png" width="180" alt="Enter your VIN to connect your car"></td>
+    <td align="center"><img src="docs/images/pairing.png" width="180" alt="Authorize OpenLatch with your existing key card"></td>
+    <td align="center"><img src="docs/images/shortcuts.png" width="180" alt="Set up Siri, Shortcuts and the Action Button"></td>
+    <td align="center"><img src="docs/images/everyday.png" width="180" alt="Current daily control screen with default door and Other doors"></td>
   </tr>
   <tr>
-    <td align="center"><sub>One-tap control</sub></td>
-    <td align="center"><sub>Dark appearance</sub></td>
-    <td align="center"><sub>Your cars</sub></td>
-    <td align="center"><sub>Guided pairing</sub></td>
+    <td align="center"><sub>1 · Connect your car</sub></td>
+    <td align="center"><sub>2 · Pair your key</sub></td>
+    <td align="center"><sub>3 · Set up shortcuts</sub></td>
+    <td align="center"><sub>4 · Daily use</sub></td>
   </tr>
 </table>
 
