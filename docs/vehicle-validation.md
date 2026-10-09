@@ -2,7 +2,6 @@
 
 [← Documentation](README.md)
 
-**Current evidence:** the owner reported successful pairing and driver-door operation. Additional doors and device-level shortcut registration still require physical validation. No model/firmware compatibility matrix is claimed.
 
 ## First vehicle validation
 

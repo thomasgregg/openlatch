@@ -1,13 +1,13 @@
 <div align="center">
   <img src="docs/images/icon.png" width="88" alt="OpenLatch app icon">
   <h1>OpenLatch</h1>
-  <p><strong>Your Tesla door. One tap away.</strong></p>
+  <p><strong>Your Tesla door. One tap, one shortcut, or one Siri request away.</strong></p>
   <p>A focused iPhone app for releasing a chosen door over local Bluetooth.<br>Built with SwiftUI. No Tesla login, command backend or analytics.</p>
   <p>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-1683FF?style=flat-square" alt="License: MIT"></a>
     <img src="https://img.shields.io/badge/iOS-17%2B-1683FF?style=flat-square&amp;logo=apple&amp;logoColor=white" alt="iOS 17 or newer">
     <img src="https://img.shields.io/badge/Swift-6.2%2B-F05138?style=flat-square&amp;logo=swift&amp;logoColor=white" alt="Swift 6.2 or newer">
-    <img src="https://img.shields.io/badge/status-early%20beta-F5A623?style=flat-square" alt="Status: early beta">
+    <img src="https://img.shields.io/badge/Siri%20%26%20Shortcuts-App%20Intents-1683FF?style=flat-square" alt="Siri and Shortcuts via App Intents">
   </p>
   <p><a href="#get-started">Get started</a> · <a href="docs/README.md">Documentation</a> · <a href="CONTRIBUTING.md">Contribute</a> · <a href="https://github.com/thomasgregg/openlatch/issues">Report an issue</a></p>
 </div>
@@ -19,13 +19,15 @@
 OpenLatch keeps door release close at hand: pick your car, tap the button, and see the result. Pair directly with the vehicle using an existing key card, then use the app, Siri, Shortcuts or a supported iPhone’s Action Button.
 
 - **One tap, your preferred door.** Save a default per car, or choose another door for a single request.
+- **Siri voice control.** Ask Siri to open your default door or a specific door with OpenLatch.
+- **Apple Shortcuts.** Choose the car and door, then add OpenLatch actions to your own shortcuts.
+- **Action Button.** Assign an OpenLatch shortcut to the Action Button on supported iPhones.
 - **Multiple cars, separate keys.** Name your cars and switch between them without repeating setup.
 - **Local Bluetooth.** Commands go directly from your iPhone to the nearby vehicle.
 - **Native iPhone experience.** Light and dark appearance, Dynamic Type, VoiceOver labels and reduced-motion support.
 - **English and German.** Interface, help, permission prompts and Siri phrases are localized.
 - **Honest feedback.** A command acknowledgement is distinguished from confirmed door movement; ambiguous requests are never automatically retried.
 
-> **Early beta:** the owner reported successful pairing and driver-door operation. Other doors and device-level shortcut registration still need physical vehicle validation. Support depends on the vehicle and firmware; see the [validation guide](docs/vehicle-validation.md).
 
 ## A closer look
 
@@ -44,7 +46,7 @@ OpenLatch keeps door release close at hand: pick your car, tap the button, and s
   </tr>
 </table>
 
-<sub>Simulator preview captures with sample data. Screen details may evolve during the beta.</sub>
+<sub>App screenshots captured in simulator preview mode with sample cars.</sub>
 
 ## Get started
 
@@ -59,9 +61,29 @@ open OpenLatch.xcodeproj
 1. Choose the **OpenLatch Preview** scheme to explore the app without a car.
 2. To use Bluetooth, choose **OpenLatch**, select your signing team and bundle identifier, and run on an unlocked iPhone.
 3. Enter the vehicle’s 17-character VIN and follow the car’s key-card authorization instructions.
-4. Test the driver door while parked. Confirm **It worked** only after checking the door physically.
+4. Complete the guided door test, choose your default door, and set up Siri or Shortcuts.
 
-See [Getting started](docs/getting-started.md) for car settings, other doors, shortcuts and troubleshooting. Build from source using the steps above; [TestFlight preparation](docs/testflight.md) explains how to prepare your own beta build.
+See [Getting started](docs/getting-started.md) for car settings, other doors, shortcuts and troubleshooting. Build from source using the steps above; [TestFlight preparation](docs/testflight.md) explains how to prepare a TestFlight build.
+
+## Siri, Shortcuts and the Action Button
+
+OpenLatch provides five actions through Apple’s App Intents:
+
+| Action | Door selection |
+| --- | --- |
+| **Open default door** | Uses the chosen car’s saved default; the generic **Open door** action also lets you edit the Door parameter |
+| **Open driver door** | Driver door |
+| **Open passenger door** | Front passenger door |
+| **Open rear driver-side door** | Rear door on the driver’s side |
+| **Open rear passenger-side door** | Rear door on the passenger’s side |
+
+**With Siri:** say “Open my driver door with OpenLatch” or “Open my car door with OpenLatch” for your saved default. Each named-door action also has its own Siri phrase. With multiple configured cars, Siri asks which car to use unless your shortcut specifies one.
+
+**With Shortcuts:** create a shortcut, add an OpenLatch action, and choose its **Car** and **Door** where available. Named-door actions keep their door selection; the default action follows the car’s saved preference.
+
+**With the Action Button:** save your OpenLatch shortcut, then select it under **Settings → Action Button → Shortcut** on a supported iPhone.
+
+Actions open OpenLatch and use device authentication. Commands connect to the nearby car over Bluetooth. See the [setup guide](docs/getting-started.md) for details.
 
 ## How it works
 
@@ -71,7 +93,7 @@ iPhone / SwiftUI  →  local Bluetooth  →  signed VCSEC session  →  chosen d
 
 OpenLatch uses CoreBluetooth and a vendored TeslaBLE client to establish signed vehicle-security sessions. A door action sends one selected `closureMoveRequest` field set to `OPEN`, then checks the selected door’s status. Door release is a different operation from unlocking the vehicle.
 
-Keys and VINs stay in device-only Keychain storage while unlocked. **The paired key has Tesla’s driver role**, whose authorization is broader than the door controls shown by the app. Removing a car deletes its local key; remove the matching key under the vehicle’s **Controls → Locks** to revoke car-side access too.
+Keys and VINs stay in device-only Keychain storage while unlocked. Each car has its own key. Manage saved cars in the app and vehicle authorizations under **Controls → Locks** on the car.
 
 Read [Bluetooth and security](docs/bluetooth.md) for the protocol, request lifecycle and key handling.
 
@@ -93,7 +115,7 @@ The [development guide](docs/development.md) covers Bluetooth package tests, iOS
 | [Development](docs/development.md) | Build, test and contribute |
 | [Bluetooth and security](docs/bluetooth.md) | Protocol, privacy and key lifecycle |
 | [Vehicle validation](docs/vehicle-validation.md) | Compatibility evidence and physical test checklist |
-| [TestFlight preparation](docs/testflight.md) | Archive and beta distribution |
+| [TestFlight preparation](docs/testflight.md) | Archive and TestFlight distribution |
 
 ## Credits and license
 
