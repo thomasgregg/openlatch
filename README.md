@@ -14,9 +14,17 @@
 
 ---
 
-## A small app for an everyday action
+## Why OpenLatch?
 
-OpenLatch keeps door release close at hand: pick your car, tap the button, and see the result. Pair directly with the vehicle using an existing key card, then use the app, Siri, Shortcuts or a supported iPhone’s Action Button.
+Unlocking your Tesla leaves the door latched: you still need to operate the exterior handle. Sometimes you want to release the latch directly—when a handle is awkward to use, when helping a passenger get in, or when you want a familiar voice command or button to do the job.
+
+Tesla’s app includes an **Unlatch Door** quick control for the **driver door**, as described in [Tesla’s owner’s manual](https://www.tesla.com/ownersmanual/model3/en_co/GUID-F907200E-A619-4A95-A0CF-94E0D03BEBEF.html). OpenLatch builds the experience around **choosing the door you want**: driver, front passenger, rear driver-side or rear passenger-side, with a saved default for each car and dedicated Siri and Shortcuts actions.
+
+Choose the passenger door for someone getting in, keep the driver door as your everyday default, or assign a specific car and door to your iPhone’s Action Button. Commands travel directly over nearby Bluetooth, with no Tesla login or command server.
+
+## Features
+
+Pair directly with the vehicle using an existing key card, then use the app, Siri, Shortcuts or a supported iPhone’s Action Button.
 
 - **One tap, your preferred door.** Save a default per car, or choose another door for a single request.
 - **Siri voice control.** Ask Siri to open your default door or a specific door with OpenLatch.
