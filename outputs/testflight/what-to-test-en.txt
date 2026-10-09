@@ -1,0 +1,13 @@
+OpenLatch 0.1.0 — first hardware beta
+
+Test VIN setup, Bluetooth permission, discovery, key-card approval and connection.
+After pairing, test driver-door release, reconnecting after reopening the app,
+switching cars, and Siri/Action Button shortcuts. Check English/German and large text.
+
+Use a parked compatible Tesla you own or are authorized to access. Keep your
+existing key card available. Vehicle and firmware compatibility is not yet verified.
+“Request accepted” does not confirm the door opened; physically check the door.
+If a result is uncertain, check the door before making another request.
+
+Report your car model/year, firmware, iPhone/iOS version, the setup step, exact
+message and whether the door opened. Do not include a full VIN or key material.

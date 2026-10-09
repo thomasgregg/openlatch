@@ -1,0 +1,9 @@
+OpenLatch öffnet die Fahrertür eines kompatiblen Tesla über lokales Bluetooth.
+Kopple einen Schlüssel direkt im Fahrzeug und nutze danach die App oder einen
+Apple-Kurzbefehl. Unterstützt mehrere Autos, Deutsch und Englisch. Ohne
+Tesla-Kontoanmeldung oder Backend.
+
+Dies ist eine frühe Hardware-Beta. Fahrzeug- und Firmware-Kompatibilität werden
+noch geprüft. Die App trennt die Verbindung im Hintergrund und ersetzt keinen
+passiven Handyschlüssel. Für die erste Freigabe brauchst du eine Tesla-
+Schlüsselkarte. OpenLatch ist ein unabhängiges Projekt ohne Verbindung zu Tesla.

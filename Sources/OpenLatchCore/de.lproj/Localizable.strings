@@ -1,0 +1,9 @@
+"Turn on Bluetooth and allow access in Settings." = "Aktiviere Bluetooth und erlaube den Zugriff in den Einstellungen.";
+"Move closer to your car, then try again." = "Geh näher an dein Auto und versuche es erneut.";
+"Pairing wasn’t confirmed. Place your keycard on the car’s centre-console reader and confirm on the car’s screen." = "Die Kopplung wurde nicht bestätigt. Lege deine Schlüsselkarte auf den Leser in der Mittelkonsole und bestätige auf dem Bildschirm im Auto.";
+"Unlock your iPhone to access your car key." = "Entsperre dein iPhone, um auf deinen Autoschlüssel zuzugreifen.";
+"The car declined the request. Check that it’s parked and supports this action." = "Das Auto hat die Anfrage abgelehnt. Prüfe, ob es geparkt ist und diese Aktion unterstützt.";
+"Couldn’t check the door. Try reconnecting." = "Der Türstatus konnte nicht geprüft werden. Verbinde dich erneut.";
+"Check your door before trying again. The request may have reached the car." = "Prüfe deine Tür, bevor du es erneut versuchst. Die Anfrage könnte das Auto erreicht haben.";
+"A request is already in progress." = "Eine Anfrage läuft bereits.";
+"Finish pairing and testing your door in OpenLatch first." = "Schließe zuerst die Kopplung und den Türtest in OpenLatch ab.";

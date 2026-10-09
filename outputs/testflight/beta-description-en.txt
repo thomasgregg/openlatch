@@ -1,0 +1,8 @@
+OpenLatch releases a compatible Tesla's driver door over local Bluetooth.
+Pair a key directly in the vehicle, then use the app or an Apple Shortcut.
+Supports multiple cars, English and German. No Tesla account login or backend.
+
+This is an early hardware beta. Real-vehicle and firmware compatibility remain
+under evaluation. The app disconnects when backgrounded; it is not a passive
+phone-key replacement. A Tesla key card is required for initial authorization.
+OpenLatch is an independent project and is not affiliated with Tesla.

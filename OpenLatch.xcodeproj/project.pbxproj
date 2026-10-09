@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00BC99BE8EC9F4E025953393 /* VehicleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152820524BB00C31BCBFD8B /* VehicleService.swift */; };
+		10462EB063B0371D6FBD0C0A /* OpenLatchLicense.txt in Resources */ = {isa = PBXBuildFile; fileRef = B595FF37546B15760DB5176E /* OpenLatchLicense.txt */; };
+		32397ECDC9C1428F87AFD685 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CABAE881645AF6297E51C55 /* HelpView.swift */; };
+		3AFA14FF27B292EE52608F3C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7CFEE3CD8330A1AD7BF62D /* RootView.swift */; };
+		439E998DA669B33BC9848806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1921337E4716163AEFEBF2BC /* Assets.xcassets */; };
+		43C3761CB3AB93984A40496C /* KeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F92AF69F74A2884A79CDD40 /* KeychainTests.swift */; };
+		44E337A7C33D81B3E53FB3DB /* TeslaBLE in Frameworks */ = {isa = PBXBuildFile; productRef = 79622E647A369FBE3EEDE31A /* TeslaBLE */; };
+		4C2EC4822AF3F9F96A2D1D28 /* TeslaBLE in Frameworks */ = {isa = PBXBuildFile; productRef = 68DFA57480F8DCA2BEA5F1E4 /* TeslaBLE */; };
+		5610AF2CFD1A5E3007623591 /* OpenLatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE771B502F094055D999B3E /* OpenLatchUITests.swift */; };
+		5F7073C57531911B9F1AED9F /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = BBCD97416A0C440705345083 /* AppShortcuts.xcstrings */; };
+		621EDD6EEA429CC37F7BF4C2 /* ThirdPartyNotices.txt in Resources */ = {isa = PBXBuildFile; fileRef = DA64683CD1E817BDE937ABC7 /* ThirdPartyNotices.txt */; };
+		6517553D28D72A10DCA7C66A /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6AC55168B2F45B3FBCE567EE /* InfoPlist.xcstrings */; };
+		6E3BF7BDE4BE99C96496D7F7 /* TeslaProtocolLicense.txt in Resources */ = {isa = PBXBuildFile; fileRef = F1B9470B79A3D9DEFE8EC3D7 /* TeslaProtocolLicense.txt */; };
+		7B2B63F07EFD62810DA9382E /* OpenDriverDoorIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3234EE33C17BA6F60CEB01C5 /* OpenDriverDoorIntent.swift */; };
+		855986851FB055579926CC0F /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321328FE9B62753E5116DA9F /* Components.swift */; };
+		874BD1519D0A87D717B2DC0A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61727CA184508ABF94CFBD2C /* SettingsView.swift */; };
+		9382088C846C0E0C7B386B09 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6A5897524E1392F26561C051 /* Localizable.xcstrings */; };
+		9A02F9CF62AE1C5D457BAB25 /* OpenLatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375872F64740B6715146E01 /* OpenLatchApp.swift */; };
+		9BB4DB69124A7A3F227B6357 /* BluetoothCancellationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7E3757CF96EC66A850841 /* BluetoothCancellationTests.swift */; };
+		A3E41B2A322D971494A8B042 /* TeslaBLELicense.txt in Resources */ = {isa = PBXBuildFile; fileRef = A20BF97F547E37F85DCC42E5 /* TeslaBLELicense.txt */; };
+		A616847C0B2219FDA24C6F2A /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D00B0F9B837EB847071F22B /* AppModel.swift */; };
+		AA9D77DD51E6E6EBF3C6EB44 /* OpenLatchCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4EC08199A82CBC4DD5889A9A /* OpenLatchCore */; };
+		BC82AB8AE62E5AC56D393F61 /* OpenLatchCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1038FA08834CDC9101E5943C /* OpenLatchCore */; };
+		C6DE1F4B1A3D82F5A2AE331F /* SwiftProtobufLicense.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93673622CD4C777EB02717A2 /* SwiftProtobufLicense.txt */; };
+		CC8679C6806D305C3763A9E7 /* MultiCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D4A0380CF735CD51BB77F /* MultiCarTests.swift */; };
+		CCECBAC42809DBEB253EEA61 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8BAC8566A049A300D1FD59C7 /* PrivacyInfo.xcprivacy */; };
+		E4C94D39AD2DDD144B6ED987 /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5887C18D2834C53CF66F1D7F /* ProfileStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F35CE90D97B347C4683DB78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E707F97209B8720D0F468CCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58AC10D7CA6F4C303416709D;
+			remoteInfo = OpenLatch;
+		};
+		5850666DC53031F3E653D2DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E707F97209B8720D0F468CCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58AC10D7CA6F4C303416709D;
+			remoteInfo = OpenLatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D00B0F9B837EB847071F22B /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		1921337E4716163AEFEBF2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CABAE881645AF6297E51C55 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		2152820524BB00C31BCBFD8B /* VehicleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleService.swift; sourceTree = "<group>"; };
+		31D7E3757CF96EC66A850841 /* BluetoothCancellationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothCancellationTests.swift; sourceTree = "<group>"; };
+		321328FE9B62753E5116DA9F /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		3234EE33C17BA6F60CEB01C5 /* OpenDriverDoorIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenDriverDoorIntent.swift; sourceTree = "<group>"; };
+		53CD7590CD0F7EE0BAE8A9CC /* TeslaBLE */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TeslaBLE; path = Packages/TeslaBLE; sourceTree = SOURCE_ROOT; };
+		5887C18D2834C53CF66F1D7F /* ProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
+		5BD5EFA83C33ACE807AE1B10 /* OpenLatchTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = OpenLatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61727CA184508ABF94CFBD2C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6A5897524E1392F26561C051 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		6AC55168B2F45B3FBCE567EE /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		6F894AB42974B439B34D7580 /* OpenLatch */ = {isa = PBXFileReference; lastKnownFileType = folder; name = OpenLatch; path = .; sourceTree = SOURCE_ROOT; };
+		7B9F2E563D911922DAAE4E0F /* OpenLatchUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = OpenLatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F92AF69F74A2884A79CDD40 /* KeychainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainTests.swift; sourceTree = "<group>"; };
+		8BAC8566A049A300D1FD59C7 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		93673622CD4C777EB02717A2 /* SwiftProtobufLicense.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwiftProtobufLicense.txt; sourceTree = "<group>"; };
+		9375872F64740B6715146E01 /* OpenLatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenLatchApp.swift; sourceTree = "<group>"; };
+		A20BF97F547E37F85DCC42E5 /* TeslaBLELicense.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TeslaBLELicense.txt; sourceTree = "<group>"; };
+		A31771E8152A439BE89C5259 /* OpenLatch.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = OpenLatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B595FF37546B15760DB5176E /* OpenLatchLicense.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OpenLatchLicense.txt; sourceTree = "<group>"; };
+		BBCD97416A0C440705345083 /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
+		BBE771B502F094055D999B3E /* OpenLatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenLatchUITests.swift; sourceTree = "<group>"; };
+		CD7CFEE3CD8330A1AD7BF62D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		CE12990666C36DFF5062B65F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DA64683CD1E817BDE937ABC7 /* ThirdPartyNotices.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ThirdPartyNotices.txt; sourceTree = "<group>"; };
+		F1B9470B79A3D9DEFE8EC3D7 /* TeslaProtocolLicense.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TeslaProtocolLicense.txt; sourceTree = "<group>"; };
+		FF8D4A0380CF735CD51BB77F /* MultiCarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCarTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08DEC018AB1F7B53C8F68C85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC82AB8AE62E5AC56D393F61 /* OpenLatchCore in Frameworks */,
+				44E337A7C33D81B3E53FB3DB /* TeslaBLE in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49502840CEE16E0EF1A9B076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA9D77DD51E6E6EBF3C6EB44 /* OpenLatchCore in Frameworks */,
+				4C2EC4822AF3F9F96A2D1D28 /* TeslaBLE in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CDFA873BA0ADBF3B6BAE233 /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				B595FF37546B15760DB5176E /* OpenLatchLicense.txt */,
+				93673622CD4C777EB02717A2 /* SwiftProtobufLicense.txt */,
+				A20BF97F547E37F85DCC42E5 /* TeslaBLELicense.txt */,
+				F1B9470B79A3D9DEFE8EC3D7 /* TeslaProtocolLicense.txt */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		3B69C5CB89FD75AE634907EF /* OpenLatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				31D7E3757CF96EC66A850841 /* BluetoothCancellationTests.swift */,
+				7F92AF69F74A2884A79CDD40 /* KeychainTests.swift */,
+				FF8D4A0380CF735CD51BB77F /* MultiCarTests.swift */,
+			);
+			path = OpenLatchTests;
+			sourceTree = "<group>";
+		};
+		6AA0869B25EE4B0AD35557D1 = {
+			isa = PBXGroup;
+			children = (
+				C4BE02FCBEEF6D439DAAED5F /* OpenLatch */,
+				3B69C5CB89FD75AE634907EF /* OpenLatchTests */,
+				EA9C177FE94787B041535141 /* OpenLatchUITests */,
+				EAB943338B57DB1D1537E034 /* Packages */,
+				8C12E04B3BD455C9D09BC42D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C12E04B3BD455C9D09BC42D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A31771E8152A439BE89C5259 /* OpenLatch.app */,
+				5BD5EFA83C33ACE807AE1B10 /* OpenLatchTests.xctest */,
+				7B9F2E563D911922DAAE4E0F /* OpenLatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		938733D2937B67396FF69DF5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				321328FE9B62753E5116DA9F /* Components.swift */,
+				1CABAE881645AF6297E51C55 /* HelpView.swift */,
+				CD7CFEE3CD8330A1AD7BF62D /* RootView.swift */,
+				61727CA184508ABF94CFBD2C /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4BE02FCBEEF6D439DAAED5F /* OpenLatch */ = {
+			isa = PBXGroup;
+			children = (
+				0D00B0F9B837EB847071F22B /* AppModel.swift */,
+				BBCD97416A0C440705345083 /* AppShortcuts.xcstrings */,
+				1921337E4716163AEFEBF2BC /* Assets.xcassets */,
+				CE12990666C36DFF5062B65F /* Info.plist */,
+				6AC55168B2F45B3FBCE567EE /* InfoPlist.xcstrings */,
+				6A5897524E1392F26561C051 /* Localizable.xcstrings */,
+				3234EE33C17BA6F60CEB01C5 /* OpenDriverDoorIntent.swift */,
+				9375872F64740B6715146E01 /* OpenLatchApp.swift */,
+				8BAC8566A049A300D1FD59C7 /* PrivacyInfo.xcprivacy */,
+				DA64683CD1E817BDE937ABC7 /* ThirdPartyNotices.txt */,
+				1CDFA873BA0ADBF3B6BAE233 /* Legal */,
+				EE1BF008E7052EC0636CDDBC /* Services */,
+				938733D2937B67396FF69DF5 /* Views */,
+			);
+			path = OpenLatch;
+			sourceTree = "<group>";
+		};
+		EA9C177FE94787B041535141 /* OpenLatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BBE771B502F094055D999B3E /* OpenLatchUITests.swift */,
+			);
+			path = OpenLatchUITests;
+			sourceTree = "<group>";
+		};
+		EAB943338B57DB1D1537E034 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				6F894AB42974B439B34D7580 /* OpenLatch */,
+				53CD7590CD0F7EE0BAE8A9CC /* TeslaBLE */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		EE1BF008E7052EC0636CDDBC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5887C18D2834C53CF66F1D7F /* ProfileStore.swift */,
+				2152820524BB00C31BCBFD8B /* VehicleService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A47A0D4EB5982169F676F3D /* OpenLatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1DCD4BC6C5C22ADCFA77D96 /* Build configuration list for PBXNativeTarget "OpenLatchUITests" */;
+			buildPhases = (
+				A18E654A94E00767C84AF199 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09A73E925691EF306446B20E /* PBXTargetDependency */,
+			);
+			name = OpenLatchUITests;
+			packageProductDependencies = (
+			);
+			productName = OpenLatchUITests;
+			productReference = 7B9F2E563D911922DAAE4E0F /* OpenLatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		58AC10D7CA6F4C303416709D /* OpenLatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0761817693BB32F265EDC2DA /* Build configuration list for PBXNativeTarget "OpenLatch" */;
+			buildPhases = (
+				4B2D235DFE2B61BD5F44489D /* Sources */,
+				8C7133B56358B3FC7190AD20 /* Resources */,
+				49502840CEE16E0EF1A9B076 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenLatch;
+			packageProductDependencies = (
+				4EC08199A82CBC4DD5889A9A /* OpenLatchCore */,
+				68DFA57480F8DCA2BEA5F1E4 /* TeslaBLE */,
+			);
+			productName = OpenLatch;
+			productReference = A31771E8152A439BE89C5259 /* OpenLatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0FA2DE2D360584A02F40AA4 /* OpenLatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB58FDDE104855A80F61857 /* Build configuration list for PBXNativeTarget "OpenLatchTests" */;
+			buildPhases = (
+				A0C6759E6E6CA83D421460AF /* Sources */,
+				08DEC018AB1F7B53C8F68C85 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E12E57EE0AA18B0FD8B3375 /* PBXTargetDependency */,
+			);
+			name = OpenLatchTests;
+			packageProductDependencies = (
+				1038FA08834CDC9101E5943C /* OpenLatchCore */,
+				79622E647A369FBE3EEDE31A /* TeslaBLE */,
+			);
+			productName = OpenLatchTests;
+			productReference = 5BD5EFA83C33ACE807AE1B10 /* OpenLatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E707F97209B8720D0F468CCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					4A47A0D4EB5982169F676F3D = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 58AC10D7CA6F4C303416709D;
+					};
+					58AC10D7CA6F4C303416709D = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					F0FA2DE2D360584A02F40AA4 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 81907B56068AF107CB197A0C /* Build configuration list for PBXProject "OpenLatch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				de,
+				en,
+			);
+			mainGroup = 6AA0869B25EE4B0AD35557D1;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D4BC4FD9D2CD7B49C2C1D54B /* XCLocalSwiftPackageReference "." */,
+				43D9AFB52737A4E0B8567A72 /* XCLocalSwiftPackageReference "Packages/TeslaBLE" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8C12E04B3BD455C9D09BC42D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58AC10D7CA6F4C303416709D /* OpenLatch */,
+				F0FA2DE2D360584A02F40AA4 /* OpenLatchTests */,
+				4A47A0D4EB5982169F676F3D /* OpenLatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C7133B56358B3FC7190AD20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F7073C57531911B9F1AED9F /* AppShortcuts.xcstrings in Resources */,
+				439E998DA669B33BC9848806 /* Assets.xcassets in Resources */,
+				6517553D28D72A10DCA7C66A /* InfoPlist.xcstrings in Resources */,
+				9382088C846C0E0C7B386B09 /* Localizable.xcstrings in Resources */,
+				10462EB063B0371D6FBD0C0A /* OpenLatchLicense.txt in Resources */,
+				CCECBAC42809DBEB253EEA61 /* PrivacyInfo.xcprivacy in Resources */,
+				C6DE1F4B1A3D82F5A2AE331F /* SwiftProtobufLicense.txt in Resources */,
+				A3E41B2A322D971494A8B042 /* TeslaBLELicense.txt in Resources */,
+				6E3BF7BDE4BE99C96496D7F7 /* TeslaProtocolLicense.txt in Resources */,
+				621EDD6EEA429CC37F7BF4C2 /* ThirdPartyNotices.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B2D235DFE2B61BD5F44489D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A616847C0B2219FDA24C6F2A /* AppModel.swift in Sources */,
+				855986851FB055579926CC0F /* Components.swift in Sources */,
+				32397ECDC9C1428F87AFD685 /* HelpView.swift in Sources */,
+				7B2B63F07EFD62810DA9382E /* OpenDriverDoorIntent.swift in Sources */,
+				9A02F9CF62AE1C5D457BAB25 /* OpenLatchApp.swift in Sources */,
+				E4C94D39AD2DDD144B6ED987 /* ProfileStore.swift in Sources */,
+				3AFA14FF27B292EE52608F3C /* RootView.swift in Sources */,
+				874BD1519D0A87D717B2DC0A /* SettingsView.swift in Sources */,
+				00BC99BE8EC9F4E025953393 /* VehicleService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C6759E6E6CA83D421460AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB4DB69124A7A3F227B6357 /* BluetoothCancellationTests.swift in Sources */,
+				43C3761CB3AB93984A40496C /* KeychainTests.swift in Sources */,
+				CC8679C6806D305C3763A9E7 /* MultiCarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18E654A94E00767C84AF199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5610AF2CFD1A5E3007623591 /* OpenLatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09A73E925691EF306446B20E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58AC10D7CA6F4C303416709D /* OpenLatch */;
+			targetProxy = 4F35CE90D97B347C4683DB78 /* PBXContainerItemProxy */;
+		};
+		7E12E57EE0AA18B0FD8B3375 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58AC10D7CA6F4C303416709D /* OpenLatch */;
+			targetProxy = 5850666DC53031F3E653D2DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		301F1E63576686484AFC0E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.openlatch.OpenLatchTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenLatch.app/OpenLatch";
+			};
+			name = Release;
+		};
+		3A2C121A8E5737400B84E0B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		519CA7A985F76B2738DBC2F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		75044A556AB3472DA5A8617D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.openlatch.OpenLatchTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenLatch.app/OpenLatch";
+			};
+			name = Debug;
+		};
+		78294F3F174A873031050E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.openlatch.OpenLatchUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenLatch;
+			};
+			name = Debug;
+		};
+		BEAE2C6CD7CF9C416697F1D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = OpenLatch/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openlatch.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D49C5750414BDE20D1364560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.openlatch.OpenLatchUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenLatch;
+			};
+			name = Release;
+		};
+		FDF13FFD819353A5F1C04EBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = OpenLatch/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openlatch.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0761817693BB32F265EDC2DA /* Build configuration list for PBXNativeTarget "OpenLatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF13FFD819353A5F1C04EBB /* Debug */,
+				BEAE2C6CD7CF9C416697F1D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		81907B56068AF107CB197A0C /* Build configuration list for PBXProject "OpenLatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A2C121A8E5737400B84E0B3 /* Debug */,
+				519CA7A985F76B2738DBC2F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EFB58FDDE104855A80F61857 /* Build configuration list for PBXNativeTarget "OpenLatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75044A556AB3472DA5A8617D /* Debug */,
+				301F1E63576686484AFC0E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F1DCD4BC6C5C22ADCFA77D96 /* Build configuration list for PBXNativeTarget "OpenLatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78294F3F174A873031050E7E /* Debug */,
+				D49C5750414BDE20D1364560 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		43D9AFB52737A4E0B8567A72 /* XCLocalSwiftPackageReference "Packages/TeslaBLE" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/TeslaBLE;
+		};
+		D4BC4FD9D2CD7B49C2C1D54B /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1038FA08834CDC9101E5943C /* OpenLatchCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenLatchCore;
+		};
+		4EC08199A82CBC4DD5889A9A /* OpenLatchCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenLatchCore;
+		};
+		68DFA57480F8DCA2BEA5F1E4 /* TeslaBLE */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TeslaBLE;
+		};
+		79622E647A369FBE3EEDE31A /* TeslaBLE */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TeslaBLE;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E707F97209B8720D0F468CCD /* Project object */;
+}

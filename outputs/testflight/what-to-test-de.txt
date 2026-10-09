@@ -1,0 +1,15 @@
+OpenLatch 0.1.0 — erste Hardware-Beta
+
+Teste VIN-Einrichtung, Bluetooth-Freigabe, Fahrzeugsuche, Bestätigung mit der
+Schlüsselkarte und Verbindung. Prüfe nach dem Koppeln das Öffnen der Fahrertür,
+die erneute Verbindung nach dem App-Start, den Autowechsel und Siri/Aktionstaste.
+Prüfe Deutsch/Englisch und große Schrift.
+
+Nutze einen geparkten, kompatiblen Tesla, den du besitzt oder nutzen darfst.
+Halte deine bisherige Schlüsselkarte bereit. Die Fahrzeug- und Firmware-
+Kompatibilität ist noch nicht bestätigt. „Anfrage bestätigt“ bedeutet nicht,
+dass die Tür offen ist. Prüfe die Tür auch bei unklarem Ergebnis, bevor du es
+erneut versuchst.
+
+Melde Modell/Baujahr, Firmware, iPhone/iOS-Version, Einrichtungsschritt, genaue
+Meldung und ob die Tür geöffnet wurde. Sende keine vollständige VIN oder Schlüssel.

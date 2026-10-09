@@ -1,0 +1,61 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "Open my car door with ${applicationName}": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öffne meine Autotür mit ${applicationName}"
+          }
+        }
+      }
+    },
+    "Open my driver door with ${applicationName}": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öffne meine Fahrertür mit ${applicationName}"
+          }
+        }
+      }
+    },
+    "Open my passenger door with ${applicationName}": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öffne meine Beifahrertür mit ${applicationName}"
+          }
+        }
+      }
+    },
+    "Open my rear driver-side door with ${applicationName}": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öffne meine hintere Tür auf der Fahrerseite mit ${applicationName}"
+          }
+        }
+      }
+    },
+    "Open my rear passenger-side door with ${applicationName}": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öffne meine hintere Tür auf der Beifahrerseite mit ${applicationName}"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
